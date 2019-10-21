@@ -1,0 +1,38 @@
+{
+
+  "manifest_version": 2,
+  "name": "Triodos Statement Downloader",
+  "version": "2.0",
+
+  "description": "Download statements from Triodos.",
+
+  "icons": {
+    "48": "icons/tulip-green.svg",
+    "96": "icons/tulip-green.svg"
+  },
+
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>",
+    "downloads"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/tulip-green.svg",
+    "default_title": "Download documents",
+    "default_popup": "popup.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "triodos@spam.organizator.ro"
+    }
+  }
+}
+
